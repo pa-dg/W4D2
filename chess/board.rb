@@ -22,13 +22,15 @@ class Board
     def setup
         (0...2).each do |i|
             (0...8).each do |j|
-                @grid[i][j] = Piece.new #grid[i, j]
+                pos = [i, j]
+                self[pos] = Piece.new #grid[i, j]
             end
         end
 
         (6...8).each do |i|
             (0...8).each do |j|
-                @grid[i][j] = Piece.new
+                pos = [i, j]
+                self[pos] = Piece.new
             end
         end
     end
@@ -40,7 +42,7 @@ class Board
     def move_piece(start_pos, end_pos)
         raise "there is nothing there at your start position requested" if !@grid[start_pos] 
         raise "there is a piece already there at your end position requested" if @grid[end_pos]
-        @grid[start_pos], @grid[end_pos] = @grid[end_pos], @grid[start_pos]
+        self[start_pos], self[end_pos] = self[end_pos], self[start_pos]
     end
 
 end 

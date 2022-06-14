@@ -1,10 +1,9 @@
 class Piece 
-    def initialize(board)
-        @board = board
+    def initialize
     end
 
     def moves
-        
+
     end
 end
 
