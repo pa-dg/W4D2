@@ -86,3 +86,10 @@ Inheritance
             - can be used on other instance of the class
 
 
+Polymorphism
+    - subs can override the behavior of superclasss
+    
+    - we can treat an obj as the generic version,and have specific behavior determined by the particulat subclass of the instance
+    
+Duck Typing
+    - 
