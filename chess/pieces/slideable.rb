@@ -4,11 +4,11 @@ module Slideable
     DIAGONAL_DIRS = [[-1, -1], [1, -1], [-1, 1], [1, 1]]
 
     def horizontal_dirs 
-        
+        return HORIZONTAL_DIRS
     end
 
     def diagonal_dirs 
-
+        return DIAGONAL_DIRS
     end
 
     def moves
